@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333C4599238CC3E6001AE42A /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C4597238CC3E6001AE42A /* InformationTableViewCell.swift */; };
+		333C459A238CC3E6001AE42A /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333C4598238CC3E6001AE42A /* InformationTableViewCell.xib */; };
+		333C459C238CC548001AE42A /* EducationCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C459B238CC548001AE42A /* EducationCellPresenter.swift */; };
+		333C459E238CC653001AE42A /* InternshipCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C459D238CC653001AE42A /* InternshipCellPresenter.swift */; };
 		33914EF223870EF100F9FC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33914EF123870EF100F9FC25 /* AppDelegate.swift */; };
 		33914EF423870EF100F9FC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33914EF323870EF100F9FC25 /* ViewController.swift */; };
 		33914EF723870EF100F9FC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33914EF523870EF100F9FC25 /* Main.storyboard */; };
 		33914EF923870EF200F9FC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33914EF823870EF200F9FC25 /* Assets.xcassets */; };
 		33914EFC23870EF200F9FC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33914EFA23870EF200F9FC25 /* LaunchScreen.storyboard */; };
 		33914F0723870EF300F9FC25 /* CVAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33914F0623870EF300F9FC25 /* CVAppTests.swift */; };
+		339B1F17238C32AA002A0EE7 /* JobInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B1F15238C32AA002A0EE7 /* JobInformationTableViewCell.swift */; };
+		339B1F18238C32AA002A0EE7 /* JobInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 339B1F16238C32AA002A0EE7 /* JobInformationTableViewCell.xib */; };
+		339B1F1A238C5A65002A0EE7 /* CurriculumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B1F19238C5A65002A0EE7 /* CurriculumService.swift */; };
+		339B1F1C238C641D002A0EE7 /* JobCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B1F1B238C641D002A0EE7 /* JobCellPresenter.swift */; };
+		33F3AE202388746300C20D46 /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE1F2388746300C20D46 /* Curriculum.swift */; };
+		33F3AE22238879D600C20D46 /* Employ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE21238879D600C20D46 /* Employ.swift */; };
+		33F3AE2423887A0300C20D46 /* ContactInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE2323887A0300C20D46 /* ContactInformation.swift */; };
+		33F3AE2623887A6300C20D46 /* EducationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE2523887A6300C20D46 /* EducationRecord.swift */; };
+		33F3AE2823887AB100C20D46 /* Internship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE2723887AB100C20D46 /* Internship.swift */; };
+		33F3AE2B23887F5F00C20D46 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE2A23887F5F00C20D46 /* MainViewPresenter.swift */; };
+		33F3AE30238892AF00C20D46 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3AE2F238892AF00C20D46 /* GenericService.swift */; };
+		35445EEC44DFDF93B6F93D77 /* Pods_CVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EABE5EEE03CDDC4A87E8ADD /* Pods_CVApp.framework */; };
+		431EE4BBBED88FC4BB2E9C84 /* Pods_CVAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603428ABB48EB5C69C1362EE /* Pods_CVAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A85B4194AA001D8B9FCF5B7 /* Pods-CVAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CVAppTests/Pods-CVAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		333C4597238CC3E6001AE42A /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
+		333C4598238CC3E6001AE42A /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
+		333C459B238CC548001AE42A /* EducationCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCellPresenter.swift; sourceTree = "<group>"; };
+		333C459D238CC653001AE42A /* InternshipCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipCellPresenter.swift; sourceTree = "<group>"; };
 		33914EEE23870EF100F9FC25 /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33914EF123870EF100F9FC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33914EF323870EF100F9FC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +58,22 @@
 		33914F0223870EF300F9FC25 /* CVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33914F0623870EF300F9FC25 /* CVAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAppTests.swift; sourceTree = "<group>"; };
 		33914F0823870EF300F9FC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339B1F15238C32AA002A0EE7 /* JobInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInformationTableViewCell.swift; sourceTree = "<group>"; };
+		339B1F16238C32AA002A0EE7 /* JobInformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobInformationTableViewCell.xib; sourceTree = "<group>"; };
+		339B1F19238C5A65002A0EE7 /* CurriculumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumService.swift; sourceTree = "<group>"; };
+		339B1F1B238C641D002A0EE7 /* JobCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellPresenter.swift; sourceTree = "<group>"; };
+		33F3AE1F2388746300C20D46 /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
+		33F3AE21238879D600C20D46 /* Employ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employ.swift; sourceTree = "<group>"; };
+		33F3AE2323887A0300C20D46 /* ContactInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInformation.swift; sourceTree = "<group>"; };
+		33F3AE2523887A6300C20D46 /* EducationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationRecord.swift; sourceTree = "<group>"; };
+		33F3AE2723887AB100C20D46 /* Internship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internship.swift; sourceTree = "<group>"; };
+		33F3AE2A23887F5F00C20D46 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		33F3AE2F238892AF00C20D46 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		603428ABB48EB5C69C1362EE /* Pods_CVAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EABE5EEE03CDDC4A87E8ADD /* Pods_CVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913C15F56325A8F82F276E44 /* Pods-CVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CVApp/Pods-CVApp.release.xcconfig"; sourceTree = "<group>"; };
+		A0E7245EF038CC273B524C87 /* Pods-CVAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CVAppTests/Pods-CVAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D518CF56C3C954ABC44A5222 /* Pods-CVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CVApp/Pods-CVApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35445EEC44DFDF93B6F93D77 /* Pods_CVApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +89,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431EE4BBBED88FC4BB2E9C84 /* Pods_CVAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAFABC981429C1D18F24862 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D518CF56C3C954ABC44A5222 /* Pods-CVApp.debug.xcconfig */,
+				913C15F56325A8F82F276E44 /* Pods-CVApp.release.xcconfig */,
+				0A85B4194AA001D8B9FCF5B7 /* Pods-CVAppTests.debug.xcconfig */,
+				A0E7245EF038CC273B524C87 /* Pods-CVAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		33914EE523870EF100F9FC25 = {
 			isa = PBXGroup;
 			children = (
 				33914EF023870EF100F9FC25 /* CVApp */,
 				33914F0523870EF300F9FC25 /* CVAppTests */,
 				33914EEF23870EF100F9FC25 /* Products */,
+				0CAFABC981429C1D18F24862 /* Pods */,
+				7CDF45BFEAB6EB0E0181C23F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +130,11 @@
 		33914EF023870EF100F9FC25 /* CVApp */ = {
 			isa = PBXGroup;
 			children = (
-				33914EF123870EF100F9FC25 /* AppDelegate.swift */,
-				33914EF323870EF100F9FC25 /* ViewController.swift */,
-				33914EF523870EF100F9FC25 /* Main.storyboard */,
-				33914EF823870EF200F9FC25 /* Assets.xcassets */,
-				33914EFA23870EF200F9FC25 /* LaunchScreen.storyboard */,
-				33914EFD23870EF200F9FC25 /* Info.plist */,
+				33F3AE2E2388925200C20D46 /* Service */,
+				33F3AE2D238881CC00C20D46 /* Support Files */,
+				33F3AE1C23886EBB00C20D46 /* Model */,
+				33F3AE2C2388814900C20D46 /* View */,
+				33F3AE2923887F4F00C20D46 /* Presenter */,
 			);
 			path = CVApp;
 			sourceTree = "<group>";
@@ -96,6 +148,71 @@
 			path = CVAppTests;
 			sourceTree = "<group>";
 		};
+		33F3AE1C23886EBB00C20D46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33F3AE1F2388746300C20D46 /* Curriculum.swift */,
+				33F3AE21238879D600C20D46 /* Employ.swift */,
+				33F3AE2323887A0300C20D46 /* ContactInformation.swift */,
+				33F3AE2523887A6300C20D46 /* EducationRecord.swift */,
+				33F3AE2723887AB100C20D46 /* Internship.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33F3AE2923887F4F00C20D46 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				33F3AE2A23887F5F00C20D46 /* MainViewPresenter.swift */,
+				339B1F1B238C641D002A0EE7 /* JobCellPresenter.swift */,
+				333C459B238CC548001AE42A /* EducationCellPresenter.swift */,
+				333C459D238CC653001AE42A /* InternshipCellPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		33F3AE2C2388814900C20D46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33914EF323870EF100F9FC25 /* ViewController.swift */,
+				33914EF523870EF100F9FC25 /* Main.storyboard */,
+				339B1F15238C32AA002A0EE7 /* JobInformationTableViewCell.swift */,
+				339B1F16238C32AA002A0EE7 /* JobInformationTableViewCell.xib */,
+				333C4597238CC3E6001AE42A /* InformationTableViewCell.swift */,
+				333C4598238CC3E6001AE42A /* InformationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33F3AE2D238881CC00C20D46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33914EFD23870EF200F9FC25 /* Info.plist */,
+				33914EF123870EF100F9FC25 /* AppDelegate.swift */,
+				33914EF823870EF200F9FC25 /* Assets.xcassets */,
+				33914EFA23870EF200F9FC25 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		33F3AE2E2388925200C20D46 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				33F3AE2F238892AF00C20D46 /* GenericService.swift */,
+				339B1F19238C5A65002A0EE7 /* CurriculumService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7CDF45BFEAB6EB0E0181C23F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EABE5EEE03CDDC4A87E8ADD /* Pods_CVApp.framework */,
+				603428ABB48EB5C69C1362EE /* Pods_CVAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33914F0B23870EF300F9FC25 /* Build configuration list for PBXNativeTarget "CVApp" */;
 			buildPhases = (
+				8251FEF16E4E57A7E6FE5816 /* [CP] Check Pods Manifest.lock */,
 				33914EEA23870EF100F9FC25 /* Sources */,
 				33914EEB23870EF100F9FC25 /* Frameworks */,
 				33914EEC23870EF100F9FC25 /* Resources */,
+				3AFA41B8E881A6B997BEBF9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33914F0E23870EF300F9FC25 /* Build configuration list for PBXNativeTarget "CVAppTests" */;
 			buildPhases = (
+				E7A840D5387757F8E1F506CE /* [CP] Check Pods Manifest.lock */,
 				33914EFE23870EF300F9FC25 /* Sources */,
 				33914EFF23870EF300F9FC25 /* Frameworks */,
 				33914F0023870EF300F9FC25 /* Resources */,
@@ -177,8 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333C459A238CC3E6001AE42A /* InformationTableViewCell.xib in Resources */,
 				33914EFC23870EF200F9FC25 /* LaunchScreen.storyboard in Resources */,
 				33914EF923870EF200F9FC25 /* Assets.xcassets in Resources */,
+				339B1F18238C32AA002A0EE7 /* JobInformationTableViewCell.xib in Resources */,
 				33914EF723870EF100F9FC25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,13 +314,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AFA41B8E881A6B997BEBF9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CVApp/Pods-CVApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CVApp/Pods-CVApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8251FEF16E4E57A7E6FE5816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A840D5387757F8E1F506CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33914EEA23870EF100F9FC25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F3AE2823887AB100C20D46 /* Internship.swift in Sources */,
 				33914EF423870EF100F9FC25 /* ViewController.swift in Sources */,
+				333C459E238CC653001AE42A /* InternshipCellPresenter.swift in Sources */,
+				339B1F17238C32AA002A0EE7 /* JobInformationTableViewCell.swift in Sources */,
+				339B1F1A238C5A65002A0EE7 /* CurriculumService.swift in Sources */,
+				339B1F1C238C641D002A0EE7 /* JobCellPresenter.swift in Sources */,
+				333C459C238CC548001AE42A /* EducationCellPresenter.swift in Sources */,
+				33F3AE2B23887F5F00C20D46 /* MainViewPresenter.swift in Sources */,
+				33F3AE2423887A0300C20D46 /* ContactInformation.swift in Sources */,
+				33F3AE22238879D600C20D46 /* Employ.swift in Sources */,
+				33F3AE202388746300C20D46 /* Curriculum.swift in Sources */,
+				33F3AE30238892AF00C20D46 /* GenericService.swift in Sources */,
+				333C4599238CC3E6001AE42A /* InformationTableViewCell.swift in Sources */,
 				33914EF223870EF100F9FC25 /* AppDelegate.swift in Sources */,
+				33F3AE2623887A6300C20D46 /* EducationRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +550,11 @@
 		};
 		33914F0C23870EF300F9FC25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D518CF56C3C954ABC44A5222 /* Pods-CVApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CVApp/Info.plist;
+				INFOPLIST_FILE = "CVApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,10 +568,11 @@
 		};
 		33914F0D23870EF300F9FC25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913C15F56325A8F82F276E44 /* Pods-CVApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CVApp/Info.plist;
+				INFOPLIST_FILE = "CVApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +586,7 @@
 		};
 		33914F0F23870EF300F9FC25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A85B4194AA001D8B9FCF5B7 /* Pods-CVAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +607,7 @@
 		};
 		33914F1023870EF300F9FC25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E7245EF038CC273B524C87 /* Pods-CVAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
