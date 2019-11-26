@@ -18,10 +18,6 @@ class JobInformationTableViewCell: UITableViewCell {
     
     var presenter: JobCellPresenter?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     func displayData() {
         guard let data = presenter?.getData() else {
             return

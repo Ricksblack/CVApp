@@ -21,11 +21,6 @@ class InformationTableViewCell: UITableViewCell {
     
     var presenter: Informable?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     func displayData() {
         guard let data = presenter?.getData() else {
             return
