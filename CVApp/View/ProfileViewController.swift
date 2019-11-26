@@ -14,14 +14,14 @@ protocol ProfileViewPresenter {
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var bachelorLabel: UILabel!
-    @IBOutlet weak var profileDescriptionLabel: UILabel!
-    @IBOutlet weak var contactInformationLabel: UILabel!
-    @IBOutlet weak var skillsLabel: UILabel!
-    @IBOutlet weak var languagesLabel: UILabel!
-    @IBOutlet weak var interestsLabel: UILabel!
+    @IBOutlet private weak var profileImage: UIImageView?
+    @IBOutlet private weak var nameLabel: UILabel?
+    @IBOutlet private weak var bachelorLabel: UILabel?
+    @IBOutlet private weak var profileDescriptionLabel: UILabel?
+    @IBOutlet private weak var contactInformationLabel: UILabel?
+    @IBOutlet private weak var skillsLabel: UILabel?
+    @IBOutlet private weak var languagesLabel: UILabel?
+    @IBOutlet private weak var interestsLabel: UILabel?
     
     var presenter: ProfileViewPresenter?
 
@@ -41,17 +41,19 @@ class ProfileViewController: UIViewController {
             let interests = data["interests"] as? [String] else {
                 return
         }
-        profileImage.image = UIImage(named: "perfilImage")
-        nameLabel.text = name
-        bachelorLabel.text = bachelor
-        profileDescriptionLabel.text = description
-        contactInformationLabel.text = contactInformation
-        skillsLabel.text = getSkills(skillsArray: skills)
-        languagesLabel.text = getLanguages(languageArray: languages)
-        interestsLabel.text = getInterests(interestArray: interests)
+        profileImage?.image = UIImage(named: "perfilImage")
+        nameLabel?.text = name
+        bachelorLabel?.text = bachelor
+        profileDescriptionLabel?.text = description
+        contactInformationLabel?.text = contactInformation
+        skillsLabel?.text = getSkills(skillsArray: skills)
+        languagesLabel?.text = getLanguages(languageArray: languages)
+        interestsLabel?.text = getInterests(interestArray: interests)
     }
-    
-    private func getSkills(skillsArray: [String]) -> String {
+}
+
+private extension ProfileViewController {
+    func getSkills(skillsArray: [String]) -> String {
         var skillText = ""
         for skill in skillsArray {
             skillText += skill + "\n "
@@ -59,7 +61,7 @@ class ProfileViewController: UIViewController {
         return skillText
     }
     
-    private func getLanguages(languageArray: [String]) -> String {
+    func getLanguages(languageArray: [String]) -> String {
         var languagesText = ""
         for language in languageArray {
             languagesText += language + "\n "
@@ -67,7 +69,7 @@ class ProfileViewController: UIViewController {
         return languagesText
     }
     
-    private func getInterests(interestArray: [String]) -> String {
+    func getInterests(interestArray: [String]) -> String {
         var interestText = ""
         for interest in interestArray {
             interestText +=  interest + "\n"

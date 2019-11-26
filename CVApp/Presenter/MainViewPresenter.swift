@@ -54,12 +54,14 @@ class MainViewPresenter<V: MainView> {
     private func setDataForHeader(name: String, bachelor: String) {
         view?.setData(data: (name, bachelor, sections))
     }
-    
+}
+
+extension MainViewPresenter: MainPresenter {
     func retrieveNumberOfRows(for section: Int) -> Int {
         currentSection = section
         guard let cv = cv,
             let section = Section.init(rawValue: section) else {
-            return 0
+                return 0
         }
         switch section {
         case .job:

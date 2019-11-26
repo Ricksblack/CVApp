@@ -10,11 +10,11 @@ import UIKit
 
 class JobInformationTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var jobTitleLabel: UILabel!
-    @IBOutlet weak var companyLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var placeLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var jobTitleLabel: UILabel?
+    @IBOutlet private weak var companyLabel: UILabel?
+    @IBOutlet private weak var dateLabel: UILabel?
+    @IBOutlet private weak var placeLabel: UILabel?
+    @IBOutlet private weak var descriptionLabel: UILabel?
     
     var presenter: JobCellPresenter?
     
@@ -26,10 +26,10 @@ class JobInformationTableViewCell: UITableViewCell {
         guard let data = presenter?.getData() else {
             return
         }
-        jobTitleLabel.text = data["title"]
-        companyLabel.text = data["company"]
-        dateLabel.text = data["date"]
-        placeLabel.text = data["place"]
-        descriptionLabel.text = data["description"]
+        jobTitleLabel?.text = data["title"]
+        companyLabel?.text = data["company"]
+        dateLabel?.text = data["date"]
+        placeLabel?.text = data["place"]
+        descriptionLabel?.text = data["description"]
     }
 }
