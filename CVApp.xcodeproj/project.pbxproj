@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330CC4F5238D9C3000638C56 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330CC4F4238D9C3000638C56 /* ProfilePresenter.swift */; };
+		330CC4F7238D9D6900638C56 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330CC4F6238D9D6900638C56 /* Profile.swift */; };
 		333C4599238CC3E6001AE42A /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C4597238CC3E6001AE42A /* InformationTableViewCell.swift */; };
 		333C459A238CC3E6001AE42A /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333C4598238CC3E6001AE42A /* InformationTableViewCell.xib */; };
 		333C459C238CC548001AE42A /* EducationCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C459B238CC548001AE42A /* EducationCellPresenter.swift */; };
 		333C459E238CC653001AE42A /* InternshipCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C459D238CC653001AE42A /* InternshipCellPresenter.swift */; };
+		333C45A2238D9B39001AE42A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C45A1238D9B39001AE42A /* ProfileViewController.swift */; };
 		33914EF223870EF100F9FC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33914EF123870EF100F9FC25 /* AppDelegate.swift */; };
 		33914EF423870EF100F9FC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33914EF323870EF100F9FC25 /* ViewController.swift */; };
 		33914EF723870EF100F9FC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33914EF523870EF100F9FC25 /* Main.storyboard */; };
@@ -44,10 +47,13 @@
 
 /* Begin PBXFileReference section */
 		0A85B4194AA001D8B9FCF5B7 /* Pods-CVAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CVAppTests/Pods-CVAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		330CC4F4238D9C3000638C56 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		330CC4F6238D9D6900638C56 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		333C4597238CC3E6001AE42A /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
 		333C4598238CC3E6001AE42A /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
 		333C459B238CC548001AE42A /* EducationCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCellPresenter.swift; sourceTree = "<group>"; };
 		333C459D238CC653001AE42A /* InternshipCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipCellPresenter.swift; sourceTree = "<group>"; };
+		333C45A1238D9B39001AE42A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		33914EEE23870EF100F9FC25 /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33914EF123870EF100F9FC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33914EF323870EF100F9FC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 				33F3AE2323887A0300C20D46 /* ContactInformation.swift */,
 				33F3AE2523887A6300C20D46 /* EducationRecord.swift */,
 				33F3AE2723887AB100C20D46 /* Internship.swift */,
+				330CC4F6238D9D6900638C56 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				33F3AE2A23887F5F00C20D46 /* MainViewPresenter.swift */,
+				330CC4F4238D9C3000638C56 /* ProfilePresenter.swift */,
 				339B1F1B238C641D002A0EE7 /* JobCellPresenter.swift */,
 				333C459B238CC548001AE42A /* EducationCellPresenter.swift */,
 				333C459D238CC653001AE42A /* InternshipCellPresenter.swift */,
@@ -180,6 +188,7 @@
 				339B1F16238C32AA002A0EE7 /* JobInformationTableViewCell.xib */,
 				333C4597238CC3E6001AE42A /* InformationTableViewCell.swift */,
 				333C4598238CC3E6001AE42A /* InformationTableViewCell.xib */,
+				333C45A1238D9B39001AE42A /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,9 +391,12 @@
 				339B1F17238C32AA002A0EE7 /* JobInformationTableViewCell.swift in Sources */,
 				339B1F1A238C5A65002A0EE7 /* CurriculumService.swift in Sources */,
 				339B1F1C238C641D002A0EE7 /* JobCellPresenter.swift in Sources */,
+				333C45A2238D9B39001AE42A /* ProfileViewController.swift in Sources */,
+				330CC4F7238D9D6900638C56 /* Profile.swift in Sources */,
 				333C459C238CC548001AE42A /* EducationCellPresenter.swift in Sources */,
 				33F3AE2B23887F5F00C20D46 /* MainViewPresenter.swift in Sources */,
 				33F3AE2423887A0300C20D46 /* ContactInformation.swift in Sources */,
+				330CC4F5238D9C3000638C56 /* ProfilePresenter.swift in Sources */,
 				33F3AE22238879D600C20D46 /* Employ.swift in Sources */,
 				33F3AE202388746300C20D46 /* Curriculum.swift in Sources */,
 				33F3AE30238892AF00C20D46 /* GenericService.swift in Sources */,

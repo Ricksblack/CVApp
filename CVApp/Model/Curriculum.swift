@@ -15,7 +15,7 @@ struct Curriculum: Decodable {
     var bachelor: String
     var profile: String
     var contactInfo: ContactInformation
-    var interestLinks: [String]
+    var skills: [String]
     var languages: [String]
     var interests: [String]
     var employmentHistory: [Employ]

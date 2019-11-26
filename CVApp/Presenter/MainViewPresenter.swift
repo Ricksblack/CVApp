@@ -11,10 +11,7 @@ import Foundation
 let jsonUrlString = "https://gist.githubusercontent.com/Ricksblack/a5bc583c6671c9dac4439d2a2acb8175/raw/bd6cc5cf5a6faa10d17cf5f084a852f5894f49e1/RicksCV"
 
 protocol MainView: class {
-    func setHeader(data: (String,String))
-}
-
-protocol Presentable {
+    func setData(data: (String,String,[String]))
 }
 
 enum Section: Int {
@@ -28,9 +25,6 @@ class MainViewPresenter<V: MainView> {
     let service: CurriculumService
     
     var cv: Curriculum?
-    var employs = [Employ]()
-    
-    //sections for the table view
     var sections = ["Job Experience", "Education", "Projects"]
     var currentSection = 0
     
@@ -49,17 +43,16 @@ class MainViewPresenter<V: MainView> {
         }
     }
     
-    func configureDataForView() {
+    private func configureDataForView() {
         guard let curriculum = cv else {
             return
         }
-        employs = curriculum.employmentHistory
         let fullName = curriculum.name + " " + curriculum.firstLastName + " " + curriculum.secondLastName
         setDataForHeader(name: fullName, bachelor: curriculum.bachelor)
     }
     
-    func setDataForHeader(name: String, bachelor: String) {
-        view?.setHeader(data: (name,bachelor))
+    private func setDataForHeader(name: String, bachelor: String) {
+        view?.setData(data: (name, bachelor, sections))
     }
     
     func retrieveNumberOfRows(for section: Int) -> Int {
@@ -93,50 +86,14 @@ class MainViewPresenter<V: MainView> {
     func retrieveIntershipPresenter(index: Int) -> InternshipCellPresenter {
         return InternshipCellPresenter(internship: cv?.internships[index])
     }
+    
+    func getProfileData() -> Profile? {
+        guard let curriculum = cv else {
+            return nil
+        }
+        let fullName = curriculum.name + " " + curriculum.firstLastName + " " + curriculum.secondLastName
+        let contact = curriculum.contactInfo
+        let contactString = "Address: " + contact.address + ", C.P: " + contact.zipCode + ", City: " + contact.state + ", Phone Number: " + contact.phoneNumber + ", email: " + contact.email
+        return Profile(name: fullName, bachelor: curriculum.bachelor, description: curriculum.profile, contactInformation: contactString, skills: curriculum.skills, languages: curriculum.languages, interest: curriculum.interests)
+    }
 }
-
-
-
-
-
-
-
-//    func retrievePresenterForCell(in section: Int, index: Int) -> Presentable? {
-//        guard let section = Section.init(rawValue: section) else {
-//            return nil
-//        }
-//        switch section {
-//        case .job:
-//            return JobCellPresenter(employ: cv?.employmentHistory[index]) as? Presentable
-//        case .education:
-//            return EducationCellPresenter(education: cv?.education[index]) as? Presentable
-//        case .internship:
-//            return InternshipCellPresenter(internship: cv?.internships[index]) as? Presentable
-//        }
-//    }
-
-//    func retrievePresenterForCell<T: Presentable>(in section: Int, index: Int, presenter: T) {
-//        guard let section = Section.init(rawValue: section) else {
-//            return
-//        }
-//        switch section {
-//        case .job:
-//            presenter.setData(data: cv?.employmentHistory[index])
-//        //            return JobCellPresenter(employ: cv?.employmentHistory[index])
-//        case .education:
-//            return EducationCellPresenter(education: cv?.education[index])
-//        case .internship:
-//            return InternshipCellPresenter(internship: cv?.internships[index])
-//        }
-//        //        if section == "Job Experience" {
-//        //            cellPresenter = JobCellPresenter(employ: cv?.employmentHistory[index])
-//        //        } else if section == "Education" {
-//        //            //TODO: sent presenter with education Model inside
-//        //            print("educacion")
-//        //            cellPresenter = JobCellPresenter(employ: cv?.employmentHistory[index])
-//        //        } else if section == "Projects" {
-//        //            //TODO: sent presenter with education Model inside
-//        //            print("projects")
-//        //            cellPresenter = JobCellPresenter(employ: cv?.employmentHistory[index])
-//        //        }
-//    }

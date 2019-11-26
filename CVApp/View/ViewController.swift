@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    struct Constants {
+        static var jobCellIdentifier: String = "jobCell"
+        static var jobCellNibName: String = "JobInformationTableViewCell"
+        static var informationCellIdentifier: String = "informationCell"
+        static var informationCellNibName: String = "InformationTableViewCell"
+        static var profileSegueName: String = "profileSegue"
+    }
     
     @IBOutlet private weak var nameLabel: UILabel?
     @IBOutlet private weak var bachelorLabel: UILabel?
     @IBOutlet private weak var tableView: UITableView?
     
     private var presenter: MainViewPresenter<ViewController>!
+    
+    var sections = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +34,23 @@ class ViewController: UIViewController {
         tableView?.register(UINib(nibName: Constants.jobCellNibName, bundle: nil), forCellReuseIdentifier: Constants.jobCellIdentifier)
         tableView?.register(UINib(nibName: Constants.informationCellNibName, bundle: nil), forCellReuseIdentifier: Constants.informationCellIdentifier)
     }
+    
+    @IBAction func buttonProfileTapped(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: Constants.profileSegueName, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.profileSegueName {
+            if let vc = segue.destination as? ProfileViewController {
+                vc.presenter = ProfilePresenter(profile: presenter.getProfileData())
+            }
+        }
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return presenter.sections.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,7 +58,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return presenter.sections[section]
+        return sections[section]
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,18 +90,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ViewController: MainView {
-    func setHeader(data: (String, String)) {
-        nameLabel?.text = data.0
-        bachelorLabel?.text = data.1
+    func setData(data: (String, String, [String])) {
+        setHeader(name: data.0, bachelor: data.1)
+        sections = data.2
         tableView?.reloadData()
     }
 }
 
-extension ViewController {
-    struct Constants {
-        static var jobCellIdentifier: String = "jobCell"
-        static var jobCellNibName: String = "JobInformationTableViewCell"
-        static var informationCellIdentifier: String = "informationCell"
-        static var informationCellNibName: String = "InformationTableViewCell"
+private extension ViewController {
+    func setHeader(name: String, bachelor: String) {
+        nameLabel?.text = name
+        bachelorLabel?.text = bachelor
     }
 }
