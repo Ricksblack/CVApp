@@ -8,15 +8,6 @@
 
 import UIKit
 
-protocol MainPresenter {
-    func retrieveNumberOfRows(for section: Int) -> Int
-    func getCurrentSection(index: Int) -> Section
-    func retrieveJobPresenter(index: Int) -> JobCellPresenter
-    func retrieveEducationPresenter(index: Int) -> EducationCellPresenter
-    func retrieveIntershipPresenter(index: Int) -> InternshipCellPresenter
-    func getProfileData() -> Profile?
-}
-
 class ViewController: UIViewController {
     struct Constants {
         static var jobCellIdentifier: String = "jobCell"
