@@ -36,15 +36,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonProfileTapped(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: Constants.profileSegueName, sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == Constants.profileSegueName {
-            if let vc = segue.destination as? ProfileViewController {
-                vc.presenter = ProfilePresenter(profile: presenter.getProfileData())
-            }
-        }
+        let profileController = ProfileViewController()
+        profileController.presenter = ProfilePresenter(profile: presenter.getProfileData())
+        present(profileController, animated: true, completion: nil)
     }
 }
 
