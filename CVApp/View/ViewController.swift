@@ -38,7 +38,11 @@ class ViewController: UIViewController {
     @IBAction func buttonProfileTapped(_ sender: UIBarButtonItem) {
         let profileController = ProfileViewController()
         profileController.presenter = ProfilePresenter(profile: presenter.getProfileData())
-        present(profileController, animated: true, completion: nil)
+        if let navController = navigationController {
+            navController.pushViewController(profileController, animated: true)
+        }
+        
+//        present(profileController, animated: true, completion: nil)
     }
 }
 
